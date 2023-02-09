@@ -9,7 +9,7 @@
             <div class="card-content" data_id="{{$task->id}}">
               <div class="content" style="align-items: center;">
                 <strong>From: </strong> {{ task.sender }} <span>
-                  <button style="margin-left: 100px;" v-on:click="select(task.id)">🗑️</button> <br>
+                  <button style="float:right;" v-on:click="select(task.id)">🗑️</button> <br>
                 </span>
                 <strong>You: </strong> {{ task.recipent }} <br>
                 <strong>Title: </strong>{{ task.title }} <br>

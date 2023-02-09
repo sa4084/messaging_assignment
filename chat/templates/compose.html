@@ -1,0 +1,20 @@
+<form method="POST" action="./compose">
+    <!-- {% csrf_token %} -->
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputEmail4">Recipent</label>
+        <input type="email" class="form-control" id="inputEmail4" placeholder="Email" name="recipent" value="{{recipent}}">
+      </div>
+    </div>
+        <div class="form-group">
+      <label for="inputAddress">Title</label>
+      <input type="text" class="form-control" id="inputAddress" placeholder="title" name = "title" value="{{title}}">
+    </div>
+    <div class="form-group">
+      <label for="inputAddress2">Text Area</label>
+      <input type="text-area" class="form-control" id="inputAddress2" placeholder="Message" name="message" value="{{message}}">
+    </div>
+   
+    <button type="submit" class="btn btn-primary">Send</button>
+  </form>
+  
